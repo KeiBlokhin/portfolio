@@ -21,11 +21,11 @@ const styles = {
 const Card = () => {
   return (
     <MuiCard sx={styles.card}>
-      <CardMedia>
+      <CardMedia sx={{ padding: 0 }}>
         {' '}
         <Image src='/img/js-course.png' alt='me' width='382' height='342' />
       </CardMedia>
-      <CardContent>
+      <CardContent sx={{ padding: 0 }}>
         <Typography variant='h5'>
           Web Development & Code 101 - Full Free Course [2022]
         </Typography>
@@ -37,7 +37,7 @@ const Card = () => {
       </CardContent>
       <CardActions>
         <Button sx={styles.btn}>
-          <Image src='/img/udemy-logo.png' alt='me' width='30' height='30' />
+          <Image src='/img/udemy-logo.png' alt='udemy' width='30' height='30' />
           View On Udemy
         </Button>
       </CardActions>

@@ -1,12 +1,13 @@
 import { Button } from '@mui/material'
 import Card from '@/components/Card'
+import Hero from '@/components/Hero'
+import FeaturedCourses from '@/components/FeaturedCourses'
 
 const index = () => {
   return (
     <div>
-      Hello monkey
-      <Button variant='contained'>Kiss me</Button>
-      <Card />
+      <Hero />
+      <FeaturedCourses />
     </div>
   )
 }
