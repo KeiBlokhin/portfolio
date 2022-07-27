@@ -5,10 +5,10 @@ import FeaturedCourses from '@/components/FeaturedCourses'
 
 const index = () => {
   return (
-    <div>
+    <>
       <Hero />
       <FeaturedCourses />
-    </div>
+    </>
   )
 }
 

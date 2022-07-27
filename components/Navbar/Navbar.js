@@ -18,7 +18,7 @@ const pages = ['Courses', 'About', 'Contact']
 
 const Navbar = () => {
   return (
-    <AppBar position='static' sx={{ backgroundColor: 'white' }}>
+    <AppBar position='static' sx={styles.appBar}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <Box

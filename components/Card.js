@@ -11,19 +11,31 @@ import Image from 'next/image'
 
 const styles = {
   card: {
-    maxWidth: '384px',
+    maxWidth: '382px',
     padding: 0,
   },
   btn: {
     textTransform: 'capitalize',
   },
+  cardImg: {},
+  courseImgWrapper: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
+  },
 }
 const Card = () => {
   return (
     <MuiCard sx={styles.card}>
-      <CardMedia sx={{ padding: 0 }}>
-        {' '}
-        <Image src='/img/js-course.png' alt='me' width='382' height='342' />
+      <CardMedia sx={styles.cardImg}>
+        <div style={styles.courseImgWrapper}>
+          <Image
+            src='/img/js-course.png'
+            width='382px'
+            height='342px'
+            objectFit='cover'
+          />
+        </div>
       </CardMedia>
       <CardContent sx={{ padding: 0 }}>
         <Typography variant='h5'>

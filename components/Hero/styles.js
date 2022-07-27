@@ -39,6 +39,7 @@ const styles = {
     borderRadius: '4px',
     padding: '12px 32px',
     textTransform: 'capitalize',
+    background: '#6C63FF',
   },
 }
 
